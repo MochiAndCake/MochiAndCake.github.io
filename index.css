@@ -1,0 +1,17 @@
+body {
+  background-color: mediumpurple;
+  font-family: Helvetica, sans-serif;
+  color: ivory;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  color: darkblue;
+}
