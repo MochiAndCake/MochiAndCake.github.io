@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 1</title>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="nav">
+        <a class = "active" href = "../index.html">SEG 3125</a>
+      </div>
+      <h1>Lab 1: Evaluate a website<h1>
+    </header>
+
+    <section id="evalWeb">
+      <p>Please evaluate the following website by filling out the survey.</p>
+      <div class="display">
+        <a class="displaySite" href="https://www.noteflight.com/" target="_blank" rel="noopener noreferrer">Noteflight</a>
+        <a class="displayContain" href="https://www.noteflight.com/" target="_blank" rel="noopener noreferrer">
+          <img class="displayImage" src="assets/noteflight_homepage.jpg" alt="Noteflight Home Page Screenshot">
+        </a>
+      </div>
+    </section>
+
+    <section id="intake" class="container">
+      <fieldset>
+        <legend>Survey</legend>
+        <form method="post" action="">
+          <div class="divQuestion">
+            <label id="q1" class="question">What device did you view the website from?</label>
+              <select id="q1" name="select">
+                <option value="mobile">Mobile</option>
+                <option value="tablet">Tablet</option>
+                <option value="laptop">Laptop</option>
+                <option value="desktop">Desktop</option>
+              </select>
+
+          </div>
+
+          <div class="divQuestion">
+            <label class="question">How was navigating within the website?</label>
+            <label><input type="radio" name="radio" value="radVEasy">Very easy</label>
+            <label><input type="radio" name="radio" value="radEasy">Easy</label>
+            <label><input type="radio" name="radio" value="radAverage">Average</label>
+            <label><input type="radio" name="radio" value="radDifficult">Difficult</label>
+            <label><input type="radio" name="radio" value="radVDifficult">Very Difficult</label>
+          </div>
+
+          <div class="divQuestion">
+            <label class="question">What components of the website do you think can be improved visually?</label>
+            <label><input type="checkbox" name="cbxSearch">Search bar</label>
+            <label><input type="checkbox" name="cbxSidebar">Sidebar</label>
+            <label><input type="checkbox" name="cbxLabel">Labels of pages</label>
+            <label><input type="checkbox" name="cbxTool">Tool icons</label>
+            <label><input type="checkbox" name="cbxLayout">General layout</label>
+            <label><input type="checkbox" name="cbxColor">Colour scheme of website</label>
+          </div>
+
+          <div class="divQuestion">
+            <label id="text" class="question">Was there another component you think can be improved?</label>
+            <div class="subtitle">Please describe in the text box (max. 200 characters).</div>
+            <input type="text" id="text" name="text" size="50" maxlength="200"></label>
+          </div>
+
+          <div class="divQuestion">
+            <label id="comments" class="question">Additional Comments:</label>
+            <textarea name="comments" id="comments" rows="5" cols="50" placeholder="Add your addiitonal comments here..."></textarea>
+          </div>
+
+          <div>
+            <input type="submit" class="btn btnSubmit" name="submit" value="Submit">
+            <input type="reset" class="btn btnReset" name="reset" value="Clear">
+          </div>
+
+          <!-- WORK IN PROGRESS -->
+          <!-- <details>
+            <summary>Bonus Question</summary>
+            <label>If you <em>had</em> to choose one, which one below would you choose?
+              <label><input type="radio" name="fun" value="radVEasy">Very easy</label>
+              <label><input type="radio" name="fun" value="radEasy">Easy</label>
+              <label><input type="radio" name="fun" value="radAverage">Average</label>
+              <label><input type="radio" name="fun" value="radDifficult">Difficult</label>
+              <label><input type="radio" name="fun" value="radVDifficult">Very Difficult</label>
+            </label>
+          </details> -->
+        </form>
+      </fieldset>
+    </section>
+
+    <footer>
+      <h6>Created by MochiAndCake.</h6>
+    </footer>
+  </body>
+</html>
