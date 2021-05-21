@@ -1,3 +1,79 @@
-body {
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 8px;
   font-family: Helvetica, sans-serif;
+  color: #242424;
+  font-size: medium;
+}
+
+/* Unvisited links */
+a:link {
+  color: #40b3ff;
+}
+/* Visited links */
+a:visited {
+  color: #379adb;
+}
+
+/* Top navigation bar */
+.nav{
+  background-color: #242424;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+}
+
+/* Style links in the navigation bar */
+.nav a{
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em 0.7em;
+  text-decoration: none;
+  font-size: medium;
+}
+
+/* Hovering on link in navigator bar */
+.nav a:hover{
+  background-color: #40b3ff;
+  color: #242424;
+}
+
+/* Clicking on the link in the navigation bar */
+.nav a:active{
+  background-color: #379adb;
+}
+
+.bloat{
+
+  flex-grow: 1;
+}
+
+/* Title of page */
+h1{
+  font-size: xx-large;
+  margin-bottom: 1em;
+}
+
+/* Footer + credits */
+footer{
+  background-color: #242424;
+  width: 100%;
+  overflow: hidden;
+}
+
+h6{
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  margin: 2em 1.4em;
 }
