@@ -129,12 +129,6 @@ select{
   cursor: pointer;
 }
 
-/* To be implemented later */
-
-/* input:checked{
-  color: #40b3ff;
-} */
-
 /* Button styles */
 .btn{
   background-color: #242424;
