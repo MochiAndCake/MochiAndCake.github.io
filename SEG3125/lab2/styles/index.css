@@ -1,0 +1,90 @@
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 8px;
+  font-family: Helvetica, sans-serif;
+  color: #242424;
+  font-size: medium;
+}
+
+.bloat{
+  flex-grow: 1;
+}
+
+/*
+  ======================================================
+    Navigator bar
+  ======================================================
+*/
+
+.nav{
+  background-color: #242424;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+}
+
+.nav button{
+  float: left;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-size: medium;
+  background-color: #242424;
+  border-style: none;
+  border-right-style: solid;
+  padding: 1em 0.7em;
+}
+
+.nav button:hover{
+  background-color: #40b3ff;
+  color: #242424;
+}
+
+.nav button:active{
+  background-color: #379adb;
+}
+
+/*
+  ======================================================
+    Tab Content
+  ======================================================
+*/
+
+.tabContent{
+  display: none;
+  padding: 1em 2em;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.lblProduct{
+  padding-bottom: 1.5em;
+}
+
+/*
+  ======================================================
+    Footer
+  ======================================================
+*/
+
+footer{
+  background-color: #242424;
+  overflow: hidden;
+  width: 100%;
+}
+
+h6{
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  margin: 2em 1.4em;
+}
