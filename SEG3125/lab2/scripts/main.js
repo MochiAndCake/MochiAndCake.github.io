@@ -30,30 +30,45 @@ function populateProductChoices(displayProduct) {
   display.innerHTML = "";
 
   // Get a reduced list of products based on restrictions
-  var optionArray = restrictProducts();
+  let optionArray = restrictProducts();
 
   // For each item in array, create a checkbox elem.
   // It looks like this:
   // <input type="checkbox" name="product" value="Egg">
   // <label style="lblProduct" for="Egg">Egg</label>
 
+  // Learned to make table using Javascript from StackOverflow: https://stackoverflow.com/questions/14643617/create-table-using-javascript/14644462
+  let table = document.createElement("table");
+  table.classList.add("tblProduct");
+  display.appendChild(table);
+
   for (i = 0; i < optionArray.length; i++) {
     let product = optionArray[i];
 
-    // Create the checkbox and add it in HTML DOM
+    let row = document.createElement("tr");
+    let cell1 = document.createElement("td");
+
     let checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.name = "product";
     checkbox.value = product.name;
-    display.appendChild(checkbox);
+    cell1.appendChild(checkbox);
 
-    // Create the label for the checkbox and add it in HTML DOM
     let label = document.createElement("label");
     label.htmlFor = product.name;
-    label.appendChild(document.createTextNode(product.name + "\nPrice: $" + product.price.toFixed(2)));
-    display.appendChild(label);
+    label.appendChild(document.createTextNode(product.name));
+    label.classList.add("lblProduct");
+    cell1.appendChild(label);
 
-    //s2.appendChild(document.createElement("br"));
+    row.appendChild(cell1);
+
+    let cell2 = document.createElement("td");
+    let p = document.createElement("p");
+    p.appendChild(document.createTextNode("Price: $" + product.price.toFixed(2)));
+    cell2.appendChild(p);
+
+    row.appendChild(cell2);
+    table.appendChild(row);
   }
 }
 
@@ -68,18 +83,30 @@ function selectedItems() {
   cart.innerHTML = "";
 
   // Build list of selected items
-  let displayResult = document.createElement("P");
+  let displayResult = document.createElement("p");
   displayResult.innerHTML = "You selected: ";
-  //displayResult.appendChild(document.createElement("br"));
+
+  let table = document.createElement("table");
+  table.classList.add("tblResult");
+  displayResult.appendChild(table);
 
   for (i = 0; i < productArray.length; i++) {
     if (productArray[i].checked) {
-      displayResult.appendChild(document.createTextNode(productArray[i].value));
+      let row = document.createElement("tr");
+      let cell = document.createElement("td");
+
+      let label = document.createElement("label");
+      label.htmlFor = productArray[i].value;
+      label.appendChild(document.createTextNode(productArray[i].value));
+      label.classList.add("lblResult");
+      cell.appendChild(label);
+      row.appendChild(cell);
+      table.appendChild(row);
 
       chosenArray.push(productArray[i].value);
     }
   }
 
   cart.appendChild(displayResult);
-  cart.appendChild(document.createTextNode("Total Price is: " + getTotalPrice(chosenArray)));
+  cart.appendChild(document.createTextNode("Total Price is: $" + getTotalPrice(chosenArray).toFixed(2)));
 }

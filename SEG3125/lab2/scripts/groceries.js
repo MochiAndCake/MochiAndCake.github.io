@@ -115,6 +115,7 @@ function restrictProducts() {
     safeProducts.push(products[i]);
   }
 
+  // Learned to use filter from w3schools.com: https://www.w3schools.com/jsref/jsref_filter.asp
   // If the person is lactose intolerant, we remove all lactose containing products.
   if (document.getElementById("cbxLactose").checked == true) {
     safeProducts = safeProducts.filter(isLactoseFree);
@@ -130,6 +131,7 @@ function restrictProducts() {
     safeProducts = safeProducts.filter(isOrganic);
   }
 
+  // Learned to use sort from w3schools.com: https://www.w3schools.com/js/js_array_sort.asp
   safeProducts.sort(priceCompare);// Sort the array
   return safeProducts; // Return the array of safe products.
 }

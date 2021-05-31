@@ -44,17 +44,17 @@ body{
 }
 
 .nav button:hover{
-  background-color: #40b3ff;
+  background-color: #60d16d;
   color: #242424;
 }
 
 .nav button:active{
-  background-color: #379adb;
+  background-color: #429e4d;
 }
 
 /*
   ======================================================
-    Tab Content
+    For all tabs
   ======================================================
 */
 
@@ -65,12 +65,78 @@ body{
   border-top: none;
 }
 
+/*
+  ======================================================
+    Preferences Section
+  ======================================================
+*/
+
+#fdsRestrictions{
+  padding: 1em;
+  margin-left: 2em;
+  margin-bottom: 2em;
+  width: fit-content;
+}
+
+#fdsRestrictions label{
+  display: block;
+  padding-bottom: 0.7em;
+}
+
+/*
+  ======================================================
+    Products Section
+  ======================================================
+*/
+
+.tblProduct{
+
+}
+
 .divProduct{
-  
+  display: block;
+  padding-bottom: 1em;
 }
 
 .lblProduct{
-  padding-bottom: 1.5em;
+ padding-right: 1em;
+ font-weight: bolder;
+}
+
+.pProduct{
+
+}
+
+.btn{
+  background-color: #60d16d;
+  color: #242424;
+  font-size: medium;
+  text-decoration: none;
+  text-align: center;
+  border: hidden;
+  border-radius: 0.15em;
+  padding: 0.7em 1.4em;
+  margin: 0.3em 0.3em;
+  cursor: pointer;
+}
+
+.btn:active{
+  background-color: #429e4d;
+}
+
+/*
+  ======================================================
+    Carts Section
+  ======================================================
+*/
+
+.tblResult{
+
+}
+
+.lblResult{
+  padding-left: 1em;
+  font-weight: bolder;
 }
 
 /*

@@ -25,13 +25,13 @@
     <!-- Client/Preferences tab content -->
     <div id="Preferences" class="tabContent">
       <h2>Your Preferences</h2>
-      <p>Tell us a bit about yourself. Peronalize your diet:</p>
+      <p>Tell us a bit about yourself by peronalizing your diet.<br>Check the checkboxes below that apply:</p>
       <!-- <select id="dietSelect" name="dietSelect" onchange="populateProductChoices(this.id, 'displayProduct')"> -->
       <fieldset id="fdsRestrictions">
         <!-- I used checkboxes because a person can have mulitple restrictions. -->
-        <label><input type="checkbox" id="cbxLactose" class="cbxRestrict">Lactose Intolerant<label>
-        <label><input type="checkbox" id="cbxNutAllergy" class="cbxRestrict">Nut Allergy<label>
-        <label><input type="checkbox" id="cbxOrganic" class="cbxRestrict">Organic<label>
+        <label><input type="checkbox" id="cbxLactose" class="cbxRestrict">Lactose Intolerant</label>
+        <label><input type="checkbox" id="cbxNutAllergy" class="cbxRestrict">Nut Allergy</label>
+        <label><input type="checkbox" id="cbxOrganic" class="cbxRestrict">Organic Food</label>
       </fieldset>
     </div>
 
@@ -41,7 +41,7 @@
       <p>We have filtered the products based on your preferences.</p>
       Choose items you want to buy:
       <div id="displayProduct"></div>
-      <button id="addCart" type="button" onclick="selectedItems()">Add selected items to cart</button>
+      <button id="addCart" type="button" class="btn" onclick="selectedItems()">Add selected items to cart</button>
     </div>
 
     <!-- Cart tab content -->
