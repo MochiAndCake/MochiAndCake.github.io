@@ -29,12 +29,8 @@ function populateProductChoices(displayProduct) {
   let display = document.getElementById(displayProduct);
   display.innerHTML = "";
 
-  document.getElementById("test").innerHTML = "Run populate 1";
-
   // Get a reduced list of products based on restrictions
   var optionArray = restrictProducts();
-
-  document.getElementById("test").innerHTML = "Run populate 2";
 
   // For each item in array, create a checkbox elem.
   // It looks like this:
@@ -54,7 +50,7 @@ function populateProductChoices(displayProduct) {
     // Create the label for the checkbox and add it in HTML DOM
     let label = document.createElement("label");
     label.htmlFor = product.name;
-    label.appendChild(document.createTextNode(product.name + "\nPrice: $" + product.price));
+    label.appendChild(document.createTextNode(product.name + "\nPrice: $" + product.price.toFixed(2)));
     display.appendChild(label);
 
     //s2.appendChild(document.createElement("br"));
