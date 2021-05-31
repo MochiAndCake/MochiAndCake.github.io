@@ -52,6 +52,16 @@ body{
   background-color: #429e4d;
 }
 
+h1{
+  float: left;
+  color: #429e4d;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bolder;
+  border-style: none;
+  margin-left: 1em;
+}
+
 /*
   ======================================================
     For all tabs
@@ -62,7 +72,7 @@ body{
   display: none;
   padding: 1em 2em;
   border: 1px solid #ccc;
-  border-top: none;
+  /* border-top: none; */
 }
 
 /*

@@ -8,8 +8,8 @@ var products = [
     name: "Yogurt",
     lactoseFree: false,
     nutFree: true,
-    organic: false,
-    price: 3.00
+    organic: true,
+    price: 4.20
   },
   {
     name: "Almond Granola Bars",
@@ -44,7 +44,7 @@ var products = [
     name: "Canned Trail Mix",
     lactoseFree: true,
     nutFree: false,
-    organic: false,
+    organic: true,
     price: 1.50
   },
   {

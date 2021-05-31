@@ -22,11 +22,15 @@
       <button class="btnTab" onclick="openInfo(event, 'Cart')">Cart</button>
     </div>
 
+    <div>
+      <h1>Welcome to Food Fields!</h1>
+    </div>
+
     <!-- Client/Preferences tab content -->
     <div id="Preferences" class="tabContent">
       <h2>Your Preferences</h2>
-      <p>Tell us a bit about yourself by peronalizing your diet.<br>Check the checkboxes below that apply:</p>
-      <!-- <select id="dietSelect" name="dietSelect" onchange="populateProductChoices(this.id, 'displayProduct')"> -->
+      <p>Tell us a bit about yourself by peronalizing your diet.</p>
+      <p>Check the checkboxes below that apply:</p>
       <fieldset id="fdsRestrictions">
         <!-- I used checkboxes because a person can have mulitple restrictions. -->
         <label><input type="checkbox" id="cbxLactose" class="cbxRestrict">Lactose Intolerant</label>
