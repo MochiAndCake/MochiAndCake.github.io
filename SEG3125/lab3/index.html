@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Food Fields</title>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+
+  <!-- The base code is from my professor, Caroline Barriere -->
+  <!-- https://github.com/carolinebarriere/carolinebarriere.github.io/blob/master/SEG3125-Module2-Grocery/ -->
+  <body id="body">
+
+    
+
+    <!-- Navigation bar for the grocery site -->
+    <div class="nav">
+      <button class="btnTab" onclick="openInfo(event, 'Main'); showProducts('displayProduct');">Products</button>
+      <button class="btnTab" onclick="openInfo(event, 'Cart')">Cart</button>
+    </div>
+
+    <div>
+      <h1>Welcome to Food Fields!</h1>
+    </div>
+
+    <!-- <div id="modalPreference" class="modal preference">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modalPreference');">&times;</span>
+        <h2>Your Preferences</h2>
+        <p>Tell us a bit about yourself by peronalizing your diet.</p>
+        <p>Check the checkboxes below that apply:</p>
+        <fieldset id="fdsRestrictions">
+          <label><input type="checkbox" id="cbxLactose" class="cbxRestrict" onclick="showProducts('displayProduct')">Lactose Intolerant</label>
+          <label><input type="checkbox" id="cbxNutAllergy" class="cbxRestrict" onclick="showProducts('displayProduct')">Nut Allergy</label>
+          <label><input type="checkbox" id="cbxOrganic" class="cbxRestrict" onclick="showProducts('displayProduct')">Organic Food</label>
+        </fieldset>
+      </div>
+    </div> -->
+    
+    <div id = "Main" class="tabContent">
+      <div class="flexContainer">
+        <!-- Products tab content -->
+        <div id="Products" class="section left">
+          <h2>Products</h2>
+          <p>The products shown below are filtered based on your diet preferences.</p>
+          Choose the products you want to buy:
+          <div id="displayProduct"></div>
+          <button id="addCart" type="button" class="btn" onclick="selectedItems()">Update the cart</button>
+        </div>
+
+        <div id="Preferences" class = "section right">
+          <h2>Your Preferences</h2>
+          <p>Check the checkboxes below that apply to your diet:</p>
+          <fieldset id="fdsRestrictions">
+            <label><input type="checkbox" id="cbxLactose" class="cbxRestrict" onclick="showProducts('displayProduct')">Lactose Intolerant</label>
+            <label><input type="checkbox" id="cbxNutAllergy" class="cbxRestrict" onclick="showProducts('displayProduct')">Nut Allergy</label>
+            <label><input type="checkbox" id="cbxOrganic" class="cbxRestrict" onclick="showProducts('displayProduct')">Organic Food</label>
+          </fieldset>
+
+          <p>Choose your preferred font size:</p>
+          <fieldset id="fdsFont">
+            <button class="smallF" onclick="changeFont(1)">Small Font</button>
+            <button class="mediumF" onclick="changeFont(2)">Medium Font</button>
+            <button class="largeF" onclick="changeFont(3)">Large Font</button>
+            <button class="xxlargeF" onclick="changeFont(4)">Extra Large Font</button>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Cart tab content -->
+    <div id="Cart" class="tabContent section">
+      <h2>Cart</h2>
+      <p>Here is your cart:</p>
+      <div id="displayCart"></div>
+    </div>
+
+    <div class="bloat"></div>
+
+    <footer>
+      <h6>Created by MochiAndCake.</h6>
+    </footer>
+
+    <!-- Scripts Used -->
+    <script type="text/javascript" src="scripts/groceries.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+
+  </body>
+</html>
