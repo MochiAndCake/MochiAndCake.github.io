@@ -1,0 +1,113 @@
+h1{
+    font-family: 'Caveat Brush', cursive;
+    font-size: xx-large;
+    color: #ffffff;
+}
+
+body{
+    font-family: 'Oxygen', sans-serif;
+}
+
+nav p{
+    color: #CEB5A7;
+}
+
+.title{
+    background-color: #3b2921;
+}
+
+.serviceSection{
+    background-color: #CEB5A7;
+    padding-top: 1em;
+    padding-bottom: 5em;
+}
+
+.locationSection{
+    padding-top: 1em;
+    padding-bottom: 5em;
+}
+
+.doctorSection{
+    background-color: #CEB5A7;
+    padding-top: 1em;
+    padding-bottom: 5em;
+}
+
+h2, h3, h4, h5, h6{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+}
+
+h2{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.contentSection{
+    display: block;
+    text-align: center;
+}
+
+.centerElem{
+    text-align: center;
+}
+
+
+.rightElem{
+    text-align: right;
+}
+
+.removePadding{
+    padding: 0%;
+}
+/* p{
+    text-align: left;
+} */
+
+.btn{
+    margin: 1em;
+    background-color: #78C0E0;
+    border-style: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: #3ea1cc;
+    color: #ffffff;
+}
+
+.btn:active{
+    background-color: #1a7196;
+    color: #ffffff;
+}
+
+.btnClose{
+    background-color: #AEAEAE;
+    color: #000000;
+}
+
+.btnClose:hover{
+    background-color: #6e6e6e;
+    color: #ffffff;
+}
+
+.btnClose:active{
+    background-color: #4e4e4e;
+    color: #ffffff;
+}
+
+.imageSize{
+    min-width: min-content;
+    min-height: min-content;
+    width: 525px;
+    height:300px;
+}
+
+.topMargin{
+    margin-top: 5%;
+}
+
+.lblInput{
+    margin-top: 1em;
+}

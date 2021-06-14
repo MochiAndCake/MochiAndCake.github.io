@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html>
+    <!-- Some of the code is learned from the TA's GitHub: https://github.com/RyanMatte/Website/blob/master/index.html-->
+    <!-- Other parts from Bootstrap's website: https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap stylesheet -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        
+        <link rel="stylesheet" type="text/css" href="styles/index.css">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+
+        <title>Greenbank Animal Hospital</title>
+    </head>
+
+    <body>
+        <!-- Discretion -->
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Discretion!</strong> This web page is an academic recreation of the <a href="http://www.greenbankanimalhosp.com/">Greenbank Animal Hospital</a> website. 
+            The contents of this web page contains fabricated information.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <!-- Header -->
+        <nav class="navbar title contentSection">
+            <h1><img src="assets/greenbank-animal-hospital-logo-small.jpg" width=70> Greenbank Animal Hospital</h1>
+            <p>Location: 3160 Greenbank Road, Barrhaven, Ontario</p>
+        </nav>
+
+        <div class="container-fluid">
+
+            <!-- Services Offered -->
+            <div class="container-fluid serviceSection">
+                <div class="container-lg">
+                    <h2 class="centerElem">Services we offer</h2>
+                    
+                    <div class="row justify-content-around">
+                        <!-- Service 1 -->
+                        <div class="card" style="width: 25rem;">
+                            
+                            <div class="card-body">
+                                <div class="container removePadding">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <h4><img src="assets/toothbrush.png" class="w-25" alt="A logo of a toothbrush with toothpaste on it."> Dentistry</h4>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="rightElem">$55.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="card-text">
+                                    Complete ultrasonic scaling and cleaning both above and below the gum line are provided for good oral hygiene and the long term health of your pet. 
+                                    Just like us, our pets get dental tartar buildup and periodontal disease. 
+                                    Untreated tooth and gum disease is not only painful for your pet, but also allows bacteria to enter the bloodstream. 
+                                    This can lead to damage to the heart, lungs, persistent urinary infections or other organ damage shortening the life of your pet. 
+                                    Remember, dental disease is not static! It only gets worse with time when not properly addressed. 
+                                    You are your pet's best defense against dental disease. 
+                                    Daily brushing and periodic dental cleaning by your veterinarian will help keep your pet's teeth clean and healthy.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Service 2 -->
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                                <div class="container removePadding">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <h4><img src="assets/comb.png" class="w-25" alt="Logo of a comb."> Grooming</h4>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="rightElem">$45.00</h6>
+                                        </div>
+                                    </div>
+                                </div>                           
+                                <p class="card-text">
+                                    Grooming services are also provided by Deb's Pet Salon to meet your pet care needs. 
+                                    Our groomer Debbie has been with the Greenbank Animal Hospital for over 30 years. 
+                                    She offers weekday and Saturday appointments. 
+                                    You can reach her directly to book an appointment at 613-692-3207.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Service 3 -->
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                                <div class="container removePadding">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <h4><img src="assets/hospitalization.png" class="w-25" alt="Logo of a stethoscope."> Hospitalization</h4>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="rightElem">$100.00</h6>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <p class="card-text">
+                                    We offer critical care for patients requiring a higher level of medical management such in intravenous fluids and antibiotic therapy. 
+                                    However, we do not provide 24 hour monitoring (staff are not on site after office hours). 
+                                    For our patients that do require 24 hour monitoring we recommend transfer to our overnight emergency clinic, the <a href="http://animalemergencyspecialty.ca/">Ottawa Animal Emergency and Specialty Hospital</a> on Lola Avenue.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <!-- Service 4 -->
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                                <div class="container removePadding">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <h4><img src="assets/apple.png" class="w-25" alt="Logo of an apple."> Pet Nutrition</h4>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="rightElem">$90.00</h6>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <p class="card-text">
+                                    Proper nutrition is an important aspect of your pet's medical management. 
+                                    We offer veterinary quality pet food to ensure proper nutrition for the long term health of your pet. 
+                                    We can tailor a diet to meet your pet's needs not only during growth and adulthood maintenance, 
+                                    but also to help control specific problems. 
+                                    Nutritional therapy can help slow the progress of serious heart, 
+                                    kidney and joint disease as well as control some urinary and intestinal problems. 
+                                    Consult with us for a nutritional recommendation to help maintain the long term health of your pet.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <!-- Service 5 -->
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                                <div class="container removePadding">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <h4><img src="assets/health.png" class="w-25" alt="Logo of heart with a heartbeat inside."> Surgery</h4>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="rightElem">$1000.00</h6>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <p class="card-text">
+                                    We offer routine surgeries such as spays and neuters, but also other types of surgeries such as general tumour removal, 
+                                    digit amputations, cherry eye repair, enucleation, exploratory surgery and gastrotomy/enterotomy for removal of foreign objects, 
+                                    and intestinal resection and anastamosis. 
+                                    We are lucky to have several specialty clinics in the Ottawa area that we can refer our patients to for advanced orthopedic surgeries.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-sm contentSection">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                            Book an appointment
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Appointment Booking Modal -->
+            <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="appointmentModalLabel">Book an appointment</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <h6 class="centerElem">Choose the service, date, and time</h6>
+                                    <label class="lblInput">Service
+                                        <select class="form-select" aria-label="selectServiceLabel">
+                                            <option selected>Open this select menu and choose a service</option>
+                                            <option value="dentistry">Dentistry</option>
+                                            <option value="grooming">Grooming</option>
+                                            <option value="hospitalization">Hospitalization</option>
+                                            <option value="nutrition">Pet Nutrition</option>
+                                            <option value="surgery">Surgery</option>
+                                        </select>
+                                    </label>
+                                    <label class="lblInput">Date<br>
+                                        <input type="date" id="date" min="2021-06-13" max="2022-06-13">
+                                    </label>
+                                    <label class="lblInput">Time<br>
+                                        <input type="time" id="time" min="08:00" max="20:00">
+                                    </label>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <h6 class="centerElem">Enter your contact information</h6>
+                                    <label class="lblInput">Name
+                                        <input type="text" class="form-control" placeholder="First_Name Last_Name">
+                                    </label>
+                                    <label class="lblInput">Phone Number
+                                        <input type="text" class="form-control" placeholder="###-###-####">
+                                    </label>
+                                    <label class="lblInput">Email Address
+                                        <input type="email" class="form-control" placeholder="name@example.com">
+                                    </label>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <h6 class="centerElem">Enter your pet's information</h6>
+                                    <label class="lblInput">Name
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </label>
+                                    <label class="lblInput">Type of Animal
+                                        <input type="text" class="form-control" placeholder="Animal">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary btnClose" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Confirm booking</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location -->
+            <div class="container-fluid contentSection locationSection">
+                <h2>Location</h2>
+
+                <div class="imageSize mx-auto">
+                    <!-- Carousel of Images -->
+                    <div id="carouselLocation" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselLocation" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselLocation" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/greenbank-animal-hospital-location-large.jpg" class="d-block w-100" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/gah-google-map.png" class="d-block w-100" alt="">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselLocation" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselLocation" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p><br>We are located <strong>3160 Greenbank Road, Barrhaven, Ontario</strong>, the heart of Barrhaven.</p>
+            </div>
+
+            <!-- Introduce People -->
+            <div class="container-fluid doctorSection">
+                <div class="container-lg">
+                    <h2 class="centerElem">Who are we?</h2>
+                    <!-- Doctor 1 -->
+                    <div class="row justify-content-around">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/doctor1.jpg" class="topMargin w-100" alt="Picture of Dr. Paige Willis with 2 dogs.">
+                            <div class="card-body">
+                                <h4>Dr. Paige Willis</h4>
+                                <p class="card-text">
+                                    A 1997 graduate of the University of Georgia, Paige practiced large and small animal medicine near Atlanta for 4 years. 
+                                    In 2001, she moved to Ottawa with her family including a faithful dog of 12 years, fish and a small parrot.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Doctor 2 -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/doctor2.jpg" class="topMargin w-100" alt="Picture of Dr. Sandra Petroff holding a cat.">
+                            <div class="card-body">
+                                <h4>Dr. Sandra Petroff</h4>
+                                <p class="card-text">
+                                    Sandra grew up in Montreal, Quebec and attended veterinary school at the University of Montreal Faculty of Veterinary Medicine. 
+                                    She is an avid musician and loves playing the piano and the guitar for her furry family members: blue heeler mix Ava and her feline siblings Spartacus, Hannibal and Daenerys.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Doctor 3 -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/doctor3.jpg" class="topMargin w-100" alt="Picture of Dr. Rob Kartes with 2 dogs.">
+                            <div class="card-body">
+                                <h4>Dr. Rob Kartes</h4>
+                                <p class="card-text">
+                                    Dr. Kartes graduated in 1986 from the University of Guelph. 
+                                    He and his wife and 4 children are loved and guarded by their two fluffy dogs Lucy and Daisy and 2 guinea pigs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap 5 script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    </body>
+</html>
