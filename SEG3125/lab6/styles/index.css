@@ -1,0 +1,170 @@
+h1{
+    font-family: 'Caveat Brush', cursive;
+    font-size: xx-large;
+    color: #ffffff;
+}
+
+body{
+    font-family: 'Oxygen', sans-serif;
+}
+
+nav p{
+    color: #CEB5A7;
+}
+
+.navCellCustom{
+    width: 100%;
+}
+
+.navItem{
+    background-color: #78C0E0;
+    color: #000000;
+    font-weight: bold;
+
+}
+
+.navItem:hover{
+    background-color: #3ea1cc;
+    color:#ffffff;
+}
+
+.title{
+    background-color: #3b2921;
+}
+
+.serviceSection{
+    background-color: #CEB5A7;
+    padding-top: 1em;
+    padding-bottom: 5em;
+}
+
+.locationSection{
+    padding-top: 1em;
+    padding-bottom: 5em;
+}
+
+.vetSection{
+    background-color: #CEB5A7;
+    padding-top: 1em;
+    padding-bottom: 5em;
+}
+
+h2, h3, h4, h5, h6{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+}
+
+h2{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.customIcon{
+    max-width: 7%;
+    max-height: 7%;
+    margin: 1%;
+    width: 7%;
+    height: 7%;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.customIconSmall{
+    max-width: 4%;
+    max-height: 4%;
+    margin-right: 0.5%;
+    width: 4%;
+    height: 4%;
+    min-width: 7px;
+    min-height: 7px;
+}
+
+.customIconForm{
+    max-width: 20px;
+    max-height: 20px;
+    margin: 5px;
+}
+
+.contentSection{
+    display: block;
+    text-align: center;
+}
+
+.centerElem{
+    text-align: center;
+}
+
+
+.rightElem{
+    text-align: right;
+}
+
+.removePadding{
+    padding: 0%;
+}
+
+.btn{
+    margin: 1em;
+    padding: 1em;;
+    background-color: #78C0E0;
+    border-style: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: #3ea1cc;
+    color: #ffffff;
+}
+
+.btn:active{
+    background-color: #1a7196;
+    color: #ffffff;
+}
+
+.btnClose{
+    background-color: #AEAEAE;
+    color: #000000;
+}
+
+.btnClose:hover{
+    background-color: #6e6e6e;
+    color: #ffffff;
+}
+
+.btnClose:active{
+    background-color: #4e4e4e;
+    color: #ffffff;
+}
+
+.hlInput:focus{
+    outline: none;
+    border-style: solid;
+    border-color: #78C0E0;
+    box-shadow: 0 0 10px #3ea1cc;
+
+}
+
+.txtCheck{
+    color: #1a7196;
+    font-style: italic;
+}
+/* .form-control.error {
+    border-color: #E74C3C;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+} */
+
+.imageSize{
+    min-width: min-content;
+    min-height: min-content;
+    width: 525px;
+    height:300px;
+}
+
+.topMargin{
+    margin-top: 5%;
+}
+
+.lblInput{
+    margin-top: 1em;
+}
